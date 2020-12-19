@@ -25,7 +25,7 @@ $("form").on("submit", async function(e) {
         api_key: "MhAodEJIJxQMxW9XqxKjyXfNYdLoOIym"
       }
   }
-  const response = await axios.get("http://api.giphy.com/v1/gifs/search", queryStringParams);
+  const response = await axios.get("https://api.giphy.com/v1/gifs/search", queryStringParams);
   appendGif(response.data);
 });
 
