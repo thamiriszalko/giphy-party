@@ -9,7 +9,7 @@ const appendGif = (response) => {
     let $newDiv = $("<div>", {class: "col-md-4 col-12 mb-4"});
     let $newImg = $("<img>", {src: imageUrl});
     $newDiv.append($newImg);
-    $giContainer.append($newDiv);
+    $gifContainer.append($newDiv);
   } catch (e) {
     alert('Please submit a giphy theme!');
   }
