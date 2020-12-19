@@ -1,4 +1,4 @@
-const $giContainer = $('[data-giphy-container]');
+const $gifContainer = $('[data-giphy-container]');
 const $searchInput = $('[data-giphy-search-input]');
 
 const appendGif = (response) => {
@@ -30,5 +30,5 @@ $("form").on("submit", async function(e) {
 });
 
 $('[data-remove-giphys]').on("click", function() {
-  $giContainer.empty();
+  $gifContainer.empty();
 });
