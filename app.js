@@ -6,7 +6,7 @@ const appendGif = (response) => {
   try {
     let randomImage = response.data[randomNumber];
     let imageUrl = randomImage.images.original.url;
-    let $newDiv = $("<div>", {class: "col-md-4 col-12 mb-4"});
+    let $newDiv = $("<div>", {class: "col-md-4 col-12 mb-4 p-4"});
     let $newImg = $("<img>", {src: imageUrl});
     $newDiv.append($newImg);
     $gifContainer.append($newDiv);
